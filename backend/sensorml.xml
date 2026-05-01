@@ -1,0 +1,47 @@
+<SensorML>
+  <member>
+    <System>
+      <identifier>Mumbai_India</identifier>
+      <description>Weather sensor located in Mumbai, India</description>
+
+      <location>
+        <Point>
+          <coordinates>19.0760,72.8777</coordinates>
+        </Point>
+      </location>
+
+      <outputs>
+        <OutputList>
+          <output name="temperature" unit="Celsius"/>
+          <output name="humidity" unit="%"/>
+          <output name="wind_speed" unit="kph"/>
+          <output name="pressure" unit="mb"/>
+        </OutputList>
+      </outputs>
+
+    </System>
+  </member>
+
+  <member>
+    <System>
+      <identifier>Delhi_India</identifier>
+      <description>Weather sensor located in Delhi, India</description>
+
+      <location>
+        <Point>
+          <coordinates>28.7041,77.1025</coordinates>
+        </Point>
+      </location>
+
+      <outputs>
+        <OutputList>
+          <output name="temperature" unit="Celsius"/>
+          <output name="humidity" unit="%"/>
+          <output name="wind_speed" unit="kph"/>
+          <output name="pressure" unit="mb"/>
+        </OutputList>
+      </outputs>
+
+    </System>
+  </member>
+</SensorML>
