@@ -1078,3 +1078,238 @@ body {
   display: flex;
   overflow: hidden;
 }
+
+/* SOS Tab */
+
+#sosTab {
+  height: 100%;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.sos-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Left filter panel */
+.sos-panel {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-panel);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.sos-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-panel-alt);
+  flex-shrink: 0;
+}
+
+.sos-panel-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+}
+
+/* Right side */
+.sos-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Map pane */
+.sos-map-pane {
+  flex: 1.5;
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+
+#sosMap {
+  width: 100%;
+  height: 100%;
+}
+
+/* Bottom: table + charts */
+.sos-bottom {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  border-top: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.sos-table-pane {
+  flex: 1.7;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 1px solid var(--border);
+}
+
+.sos-charts-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sos-charts-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.sos-chart-wrap {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+/* Temperature legend */
+.sos-legend {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  box-shadow: var(--shadow-md);
+  z-index: 100;
+  opacity: 0.92;
+}
+
+.sos-legend-title {
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+}
+
+.sos-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 3px;
+  font-size: 11px;
+  color: var(--text-sub);
+}
+
+.sos-legend-row span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Request URL display */
+.sos-url-display {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  background: var(--bg-panel-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 8px;
+  word-break: break-all;
+  line-height: 1.5;
+}
+
+/* XML output in left panel */
+.sos-xml-out {
+  background: var(--bg-panel-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-sub);
+  max-height: 180px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+/* Temperature badge in table */
+.temp-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px;
+  min-width: 42px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* Mono cell */
+.mono-cell {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+/* Selected table row */
+#sosDataTable tbody tr {
+  cursor: pointer;
+}
+
+#sosDataTable tbody tr.sos-row-selected {
+  background: rgba(79, 110, 247, 0.14) !important;
+  outline: 1px solid var(--accent);
+  outline-offset: -1px;
+}
+
+/* Sensor popup grid */
+.sos-popup-name {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text);
+  padding: 6px 12px 2px;
+}
+
+.sos-popup-sub {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  padding: 0 12px 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sos-popup-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3px 10px;
+  padding: 8px 12px;
+  font-size: 11px;
+}
+
+.sos-popup-grid span:nth-child(odd) {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding-top: 1px;
+}

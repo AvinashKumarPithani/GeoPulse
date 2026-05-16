@@ -3,23 +3,19 @@ function showTab(tab) {
   const sos = document.getElementById("sosTab");
 
   if (tab === "ogc") {
-    ogc.style.display = "block";
+    ogc.style.display = "flex";
     sos.style.display = "none";
-
-    //  CRITICAL FIX
-    setTimeout(() => {
-      if (window.map) {
-        map.updateSize();
-      }
-    }, 100);
+    setTimeout(() => { if (window.map) map.updateSize(); }, 100);
   } else {
     ogc.style.display = "none";
-    sos.style.display = "block";
+    sos.style.display = "flex";
+    // initialise SOS map the first time the tab opens
+    setTimeout(() => {
+      initSOSMap();
+      if (window.sosMap) sosMap.updateSize();
+    }, 80);
   }
 
-  // update active button
-  document
-    .querySelectorAll(".tab-btn")
-    .forEach((btn) => btn.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach((btn) => btn.classList.remove("active"));
   event.target.classList.add("active");
 }
