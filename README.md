@@ -1,10 +1,10 @@
-# GeoPulse - Interoperable Geospatial & Sensor Observation Platform
+# GeoPulse - Interoperable GIS & Sensor Observation Platform
 
 GNR629 Projects | CSRE, IIT Bombay
 
 Developed by Avinash Kumar Pithani and Manas Avinashe
 
-GeoPulse is a client-server geospatial platform implementing OGC-compliant WMS, WFS, and SOS services for spatial data visualization, feature querying, and sensor observation analysis.
+GeoPulse is a client-server GIS platform implementing OGC-compliant WMS, WFS, and SOS services for spatial visualization, feature querying, and sensor observation analysis.
 
 The platform integrates:
 
@@ -13,7 +13,7 @@ The platform integrates:
 - Sensor Observation Service (SOS 2.0) APIs using FastAPI
 - Spatial and observational data workflows using PostgreSQL/PostGIS and SQLite
 
-The system supports interoperable geospatial workflows including:
+The system supports interoperable GIS workflows including:
 
 - GetCapabilities
 - GetMap
@@ -22,13 +22,13 @@ The system supports interoperable geospatial workflows including:
 - DescribeSensor
 - Sensor observation retrieval and filtering
 
-The project demonstrates interoperable GIS architecture, modular frontend design, client-server communication, spatial database integration, XML/JSON processing, and interactive geospatial workflows.
+The project demonstrates interoperable GIS architecture, modular frontend design, client-server communication, spatial database integration, XML/JSON processing, and interactive GIS workflows.
 
 ---
 
 # Project Overview
 
-GeoPulse combines modular interoperable geospatial components within a unified client-server web portal.
+GeoPulse combines modular interoperable GIS components within a unified client-server web portal.
 
 ## 1. OGC Web Services Client (WMS/WFS)
 
@@ -47,7 +47,7 @@ The interoperable design enables the client to connect to both local GeoServer i
 
 ### Application Domain: Soil Moisture Monitoring – Maharashtra
 
-The WMS/WFS module demonstrates interoperable GIS workflows using soil moisture-related geospatial datasets for Maharashtra, India.
+The WMS/WFS module demonstrates interoperable GIS workflows using soil moisture-related spatial datasets for Maharashtra, India.
 
 The application enables interactive exploration of environmental layers relevant to:
 
@@ -376,7 +376,7 @@ http://127.0.0.1:8000
 - Retrieve capabilities
 - Load map layers
 - Query spatial features
-- Visualize multi-layer geospatial data
+- Visualize multi-layer spatial data
 
 ---
 
